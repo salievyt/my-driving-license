@@ -1,0 +1,24 @@
+# Core
+Django==5.1.2
+djangorestframework==3.15.2
+django-cors-headers==4.6.0
+django-filter==24.3
+django-jazzmin==3.0.1
+django-ckeditor==6.7.2
+
+# Auth
+djangorestframework-simplejwt==5.4.0
+
+# Utils
+python-decouple==3.8
+drf-spectacular==0.28.0
+drf-nested-routers==0.93.5
+Pillow==11.1.0
+
+# Background tasks
+celery==5.4.0
+redis==5.2.1
+
+# Storage
+django-storages==1.14.4
+boto3==1.35.98
