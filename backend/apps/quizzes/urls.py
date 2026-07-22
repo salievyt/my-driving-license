@@ -1,0 +1,9 @@
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from . import views
+
+router = DefaultRouter()
+router.register(r'', views.QuizViewSet)
+router.register(r'attempts', views.QuizAttemptViewSet, basename='quiz-attempts')
+
+urlpatterns = router.urls
