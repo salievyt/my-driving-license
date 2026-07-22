@@ -1,0 +1,143 @@
+JAZZMIN_SETTINGS = {
+    # Title
+    'site_title': 'My Driving Study',
+    'site_header': 'My Driving Study',
+    'site_brand': '🚗 My Driving Study',
+    'site_logo': None,
+    'login_logo': None,
+    'login_logo_dark': None,
+    'site_logo_classes': 'img-circle',
+    'site_icon': None,
+    'welcome_sign': 'Добро пожаловать в панель управления',
+    'copyright': 'My Driving Study © 2026',
+
+    # Search
+    'search_model': ['accounts.User', 'lessons.Lesson', 'quizzes.Question'],
+
+    # Top menu
+    'topmenu_links': [
+        {'name': 'Главная', 'url': 'admin:index', 'permissions': ['auth.view_user']},
+        {'name': 'Публичный сайт', 'url': '/', 'new_window': True},
+        {'model': 'auth.User'},
+    ],
+
+    # Side menu
+    'usermenu_links': [
+        {'name': 'Публичный сайт', 'url': '/', 'new_window': True, 'icon': 'fas fa-external-link-alt'},
+    ],
+
+    'show_sidebar': True,
+    'navigation_expanded': True,
+    'hide_apps': [],
+    'hide_models': [],
+    'order_with_respect_to': [
+        'accounts',
+        'accounts.User',
+        'accounts.Profile',
+        'accounts.UserBadge',
+        'lessons',
+        'lessons.Category',
+        'lessons.Tag',
+        'lessons.Lesson',
+        'quizzes',
+        'quizzes.Quiz',
+        'quizzes.Question',
+        'quizzes.Answer',
+        'quizzes.QuizAttempt',
+        'progress',
+        'progress.UserProgress',
+        'progress.WeakTopic',
+        'progress.Achievement',
+        'subscriptions',
+        'subscriptions.SubscriptionPlan',
+        'subscriptions.UserSubscription',
+        'notifications',
+        'notifications.Notification',
+        'blog',
+        'blog.ArticleCategory',
+        'blog.Article',
+        'support',
+        'support.FAQ',
+        'support.SupportTicket',
+    ],
+
+    # Icons
+    'icons': {
+        'accounts.User': 'fas fa-user-graduate',
+        'accounts.Profile': 'fas fa-id-card',
+        'accounts.UserBadge': 'fas fa-medal',
+        'lessons.Category': 'fas fa-folder',
+        'lessons.Tag': 'fas fa-tags',
+        'lessons.Lesson': 'fas fa-book-open',
+        'lessons.LessonProgress': 'fas fa-chart-line',
+        'quizzes.Quiz': 'fas fa-question-circle',
+        'quizzes.Question': 'fas fa-question',
+        'quizzes.Answer': 'fas fa-check-circle',
+        'quizzes.QuizAttempt': 'fas fa-history',
+        'progress.UserProgress': 'fas fa-tachometer-alt',
+        'progress.WeakTopic': 'fas fa-exclamation-triangle',
+        'progress.StudySession': 'fas fa-clock',
+        'progress.Achievement': 'fas fa-trophy',
+        'subscriptions.SubscriptionPlan': 'fas fa-crown',
+        'subscriptions.UserSubscription': 'fas fa-credit-card',
+        'notifications.Notification': 'fas fa-bell',
+        'blog.ArticleCategory': 'fas fa-newspaper',
+        'blog.Article': 'fas fa-file-alt',
+        'blog.ArticleComment': 'fas fa-comment',
+        'support.FAQ': 'fas fa-question-circle',
+        'support.SupportTicket': 'fas fa-headset',
+        'support.TicketMessage': 'fas fa-envelope',
+        'auth.Group': 'fas fa-users',
+    },
+
+    # Default icon
+    'default_icon_parents': 'fas fa-chevron-circle-right',
+    'default_icon_children': 'fas fa-circle',
+
+    # UI Tweaks
+    'related_modal_active': True,
+    'custom_css': None,
+    'custom_js': None,
+    'use_google_fonts_cdn': True,
+    'show_ui_builder': False,
+
+    # Change view
+    'changeform_format': 'horizontal_tabs',
+    'changeform_format_overrides': {
+        'accounts.User': 'collapsible',
+        'lessons.Lesson': 'horizontal_tabs',
+        'quizzes.Question': 'horizontal_tabs',
+    },
+}
+
+JAZZMIN_UI_TWEAKS = {
+    'navbar_small_text': False,
+    'footer_small_text': False,
+    'body_small_text': False,
+    'brand_small_text': False,
+    'brand_colour': False,
+    'accent': 'accent-primary',
+    'navbar': 'navbar-dark navbar-primary',
+    'no_navbar_border': False,
+    'navbar_fixed': True,
+    'layout_boxed': False,
+    'footer_fixed': False,
+    'sidebar_fixed': True,
+    'sidebar': 'sidebar-dark-primary',
+    'sidebar_nav_small_text': False,
+    'sidebar_disable_expand': False,
+    'sidebar_nav_child_indent': False,
+    'sidebar_nav_compact_style': False,
+    'sidebar_nav_legacy_style': False,
+    'sidebar_nav_flat_style': False,
+    'theme': 'darkly',
+    'dark_mode_theme': 'darkly',
+    'button_classes': {
+        'primary': 'btn-primary',
+        'secondary': 'btn-secondary',
+        'info': 'btn-info',
+        'warning': 'btn-warning',
+        'danger': 'btn-danger',
+        'success': 'btn-success',
+    },
+}
